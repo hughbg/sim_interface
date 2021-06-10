@@ -1,0 +1,22 @@
+simulator: pyuvsim
+nfreq: 1
+ntime: 1
+start_freq: 100000000.0
+channel_width: 97000
+start_time: 2458902.4
+integration_time: 40
+
+beam_spec:
+        type: gaussian
+        sigma: 0.103
+
+source_spec:
+        origin: list
+        list: [ [ 125.7, -30.72, 2, 0 ] ]
+        number: all
+
+antenna_spec:
+        origin: list
+        list: [[ 308.5282573066984, 253.45929397051017, 0.4985070123025904],
+                [8.3007797437606, 299.52155301544474, 0.22479664553084766]]
+        number: all

@@ -1,0 +1,34 @@
+simulator: hera_sim_polybeam_astropy
+
+sim_spec:
+        nfreq: 1
+        ntime: 1
+        start_freq: 100000000.0
+        channel_width: 97000
+        start_time: 2458902.4
+        integration_time: 40
+
+vis_cpu:
+        use_pixel_beams: False
+        split_I: True
+        az_za_corrections: "precompute, level_2, uvbeam_az"
+
+beam_spec:
+        beam_type: polybeam
+        beam_coeffs: [ 0.29778665, -0.44821433, 0.27338272,
+                    -0.10030698, -0.01195859, 0.06063853,
+                    -0.04593295,  0.0107879,  0.01390283,
+                    -0.01881641, -0.00177106, 0.01265177,
+                    -0.00568299, -0.00333975, 0.00452368,
+                     0.00151808, -0.00593812, 0.00351559
+                    ]
+source_spec:
+        origin: list
+        list: [ [ 125.7, -30.72, 2, 0 ] ]
+        number: all
+
+antenna_spec:
+        origin: list
+        list: [[ 308.5282573066984, 253.45929397051017, 0.4985070123025904], 
+                [8.3007797437606, 299.52155301544474, 0.22479664553084766]]
+        number: all
